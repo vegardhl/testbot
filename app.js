@@ -28,7 +28,17 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 
 bot.dialog('/',intents); 
 
+server.post('webhook', function(req, res){
 
+    var reply = "dette er ftballtesten";
+
+    return res.status(200).json({
+        source: 'webhook',
+        speech: reply,
+        displaytext: reply
+    });
+
+});
 
 // INTENTENE...
 
@@ -100,3 +110,6 @@ intents.matches('ikkeasdTilgangTilSak',function(session,args){
 intents.onDefault(function(session){ 
     session.send("Sorry...jeg sjønner ikke hva du sier?"); 
 });
+
+
+
