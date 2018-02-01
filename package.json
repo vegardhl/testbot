@@ -1,0 +1,16 @@
+{
+  "name": "bottestdialogflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "api-ai-recognizer": "^1.1.1",
+    "botbuilder": "^3.14.0",
+    "restify": "^6.3.4"
+  }
+}
